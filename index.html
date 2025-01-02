@@ -3,9 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
     <title>js test 4</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1>Expense tracker</h1>
+      <div class="form">
+        <input type="text" id="name" placeholder="expense name" />
+        <input type="number" id="amount" placeholder="amount" />
+        <input type="date" id="date" />
+        <select id="category">
+          <option value="">select category</option>
+          <option value="food">food</option>
+          <option value="transport">transport</option>
+          <option value="entertainment">entertainment</option>
+          <option value="utilities">utilities</option>
+        </select>
+        <button id="add">add expense</button>
+      </div>
+      <div class="summary">
+        <h2>total expenses: <span id="total">0</span></h2>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>name</th>
+            <th>amount</th>
+            <th>date</th>
+            <th>category</th>
+            <th>actions</th>
+          </tr>
+        </thead>
+        <tbody id="table"></tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
